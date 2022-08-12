@@ -1,9 +1,9 @@
 #!/bin/env bash
 
 # Atualizar servidor
-apt-get update && apt-get upgrade -y 
+apt update && apt upgrade -y 
 
-apt install apache2 unzip && apt-get autoremove && apt-get autoclean
+apt install -y apache2 unzip && apt autoremove && apt autoclean
 
 pushd /tmp || exit 1
 
