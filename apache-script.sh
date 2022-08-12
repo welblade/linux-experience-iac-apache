@@ -13,4 +13,6 @@ unzip main.zip
 
 cp -r ./linux-site-dio-main/* /var/www/html/
 
+systemctl restart apache2
+
 popd || exit 1
